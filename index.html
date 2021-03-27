@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Locart Door</title>
+</head>
+<style>
+  .round-btn1{
+     border-radius: 25px;
+     letter-spacing: 3px;
+     border:2px solid black
+  }
+  .round-btn1:hover{
+    color: yellow !important;
+    background-color: black;
+  }
+  .round-btn2{
+     border-radius: 25px;
+     letter-spacing: 3px;
+     background-color: black;
+     color:yellow!important;
+  }
+  nav{
+   background-color:  rgb(255, 220, 21);;
+
+  }
+  .testimonials-clean {
+  color:#f0f3f8;
+  background-color:#101d46;
+}
+
+.testimonials-clean p {
+  color:#7d8285;
+}
+
+.testimonials-clean h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .testimonials-clean h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.testimonials-clean .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.testimonials-clean .intro p {
+  margin-bottom:0;
+}
+
+.testimonials-clean .people {
+  padding:50px 0 20px;
+}
+
+.testimonials-clean .item {
+  margin-bottom:32px;
+}
+
+@media (min-width:768px) {
+  .testimonials-clean .item {
+    height:220px;
+  }
+}
+
+.testimonials-clean .item .box {
+  padding:30px;
+  background-color:#fff;
+  position:relative;
+}
+
+.testimonials-clean .item .box:after {
+  content:'';
+  position:absolute;
+  left:30px;
+  bottom:-24px;
+  width:0;
+  height:0;
+  border:15px solid transparent;
+  border-width:12px 15px;
+  border-top-color:#fff;
+}
+
+.testimonials-clean .item .author {
+  margin-top:28px;
+  padding-left:25px;
+}
+
+.testimonials-clean .item .name {
+  font-weight:bold;
+  margin-bottom:2px;
+  color:inherit;
+}
+
+.testimonials-clean .item .title {
+  font-size:13px;
+  color:#13aaeb;
+}
+
+.testimonials-clean .item .description {
+  font-size:15px;
+  margin-bottom:0;
+}
+
+.testimonials-clean .item img {
+  max-width:40px;
+  float:left;
+  margin-right:12px;
+  margin-top:-5px;
+}
+</style>
+
+<body>
+  <!-- START HERE -->
+  <header style="background-color: rgb(255, 220, 21);">
+    <nav class="navbar navbar-expand-sm navbar-light  mb-5 pt-4">
+      <div class="container">
+          <a class="navbar-brand " style="font-size: xx-large;" href="index.html"><b>Locart Door</b></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link btn  round-btn1 m-2 " href="#"><b>LOGIN</b></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link btn   round-btn2 m-2 " href="#"><b>SIGNUP</b></a>
+                  </li>
+                  
+              </ul>
+          </div>
+      </div>
+  </nav>
+<div class="container ">
+  <div class="row ">
+    <div class="col-lg-6" style="margin-top: 10%;">
+       <h1><b>Want ?</b></h1>
+       <h5><b>Food, drinks, groceries, and more available for delivery and pickup.</b></h5>
+       <div style="border:1px solid black" class="card">
+         <div style="border-bottom:1px solid black" class="card-body p-0">
+           <div class="d-flex" >
+            <i class="fas fa-map-marker-alt m-2" style="font-size: 30px;  "></i>
+            <input class="form-control" placeholder="Enter your address..." style="border-radius: 0px;">
+            <a class="btn btn-dark" style="border-radius: 0px;"><i class="fas fa-arrow-right text-white m-2"></i></a>
+           </div>
+         </div>
+         <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item " style="margin-left: 40px;">
+            <a class="nav-link active " style="border-radius: 0px;" id="home-tab" data-toggle="tab" href="#" role="tab" aria-controls="delivery" aria-selected="true"><b>Delivery</b></a>
+          </li>
+          <li class="nav-item  " style="margin-left: 40%;">
+            <a class="nav-link" id="profile-tab" style="border-radius: 0px;" data-toggle="tab" href="#" role="tab" aria-controls="pickup" aria-selected="false"><b>Pickup</b></a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="d-flex">
+              <i class="fas fa-location-arrow" style="font-size: 30px;margin: 5px; color: rgb(68, 205, 247);"></i>
+              <input class="form-control" placeholder="Enter your address..." style="border-radius: 0px;">
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile-tab" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        </div>
+       </div>
+    </div>
+    <div class="col-lg-6 mt-0">
+       <img src="img/1616671391586.png"  class="img-fluid">
+    </div>
+  </div>
+</div>
+  </header>
+
+
+  <!----------------------------------------------------------------------------------------------------------------->
+
+  <section class="container">
+      <h3 class="mt-5"><b>What do you want to get done?</b></h3>
+      <div class="card-columns mt-5">
+        <div class="card shadow">
+           <div class="card-body">
+              <div class="d-flex">
+                 <img src="https://www.flaticon.com/svg/vstatic/svg/2503/2503466.svg?token=exp=1616674241~hmac=77087b3dc909a59b90dff0ec31354ccf" class="img-fluid " width="80px">
+                 <h5 class="pt-4 ml-3"><b>Groceries & Essentials</b></h5>
+              </div>
+           </div>
+        </div>
+        <div class="card shadow">
+          <div class="card-body">
+             <div class="d-flex">
+                <img src="https://www.flaticon.com/svg/vstatic/svg/1147/1147934.svg?token=exp=1616675461~hmac=9e1efd5ab13b1b4cd03a10046e69b1d3" class="img-fluid " width="80px">
+                <h5 class="pt-4 ml-3"><b>Fruits & Vegetables</b></h5>
+             </div>
+          </div>
+       </div>
+       <div class="card shadow">
+        <div class="card-body">
+           <div class="d-flex">
+              <img src="https://www.flaticon.com/svg/vstatic/svg/2371/2371873.svg?token=exp=1616675525~hmac=80f69cfe534efb6949969892fd7806f3" class="img-fluid " width="80px">
+              <h5 class="pt-4 ml-3"><b>Dairy Essentials</b></h5>
+           </div>
+        </div>
+     </div>
+     <div class="card shadow">
+      <div class="card-body">
+         <div class="d-flex">
+            <img src="https://www.flaticon.com/svg/vstatic/svg/3076/3076125.svg?token=exp=1616675593~hmac=d8da6b77f6f8b860fdabd93c6d25b2ed" class="img-fluid " width="80px">
+            <h5 class="pt-4 ml-3"><b>Meat & Fish</b></h5>
+         </div>
+      </div>
+   </div>
+   <div class="card shadow">
+    <div class="card-body">
+       <div class="d-flex">
+          <img src="https://www.flaticon.com/svg/vstatic/svg/2921/2921822.svg?token=exp=1616675720~hmac=157f8c7d9c4e939feaaffa8b95232344" class="img-fluid " width="80px">
+          <h5 class="pt-4 ml-3"><b>Food Delivery</b></h5>
+       </div>
+    </div>
+ </div>
+ <div class="card shadow">
+  <div class="card-body">
+     <div class="d-flex">
+        <img src="https://www.flaticon.com/svg/vstatic/svg/3022/3022827.svg?token=exp=1616675757~hmac=002259d91c9b593c7b078ed94651efe3" class="img-fluid " width="80px">
+        <h5 class="pt-4 ml-3"><b>Medicines</b></h5>
+     </div>
+  </div>
+</div>
+<div class="card shadow">
+  <div class="card-body">
+     <div class="d-flex">
+        <img src="https://www.flaticon.com/premium-icon/icons/svg/3620/3620696.svg" class="img-fluid " width="80px">
+        <h5 class="pt-4 ml-3"><b>Send Packages</b></h5>
+     </div>
+  </div>
+</div>
+
+      </div>
+  </section>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+  <section class="container">
+    <h3 class="mt-5"><b>Best of everyday essential</b></h3>
+    <div class="row mt-5">
+      <div class="col-lg-3">
+        <center>
+          <div>
+            <img src="https://www.ukscreenalliance.co.uk/wp-content/uploads/2019/06/Onion-AdobeStock_123486457-2048x1403.jpeg" class="img-fluid " width="100px" height="100px"><br>
+            <p class=""><b>Fresho Onion, 1 kg </b></p>
+            <button class="btn btn-primary ">+Add</button>
+          </div>
+          </center>
+      </div>
+      <div class="col-lg-3">
+        <center>
+          <div>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61THuQWrAZL._SL1200_.jpg" class="img-fluid " width="100px" height="100px"><br>
+            <p><b>Fresho Coconut - Large, 
+              1  </b></p>
+            <button class="btn btn-primary">+Add</button>
+          </div>
+          </center>
+      </div>
+      <div class="col-lg-3">
+        <center>
+          <div>
+            <img src="https://5.imimg.com/data5/TE/ID/MY-45371487/fresh-banana-500x500.jpg" class="img-fluid " width="100px"><br>
+            <p><b>Fresho Banana - Robusta, 1 kg</b></p>
+            <button class="btn btn-primary">+Add</button>
+          </div>
+          </center>
+      </div>
+      <div class="col-lg-3">
+        <center>
+          <div>
+            <img src="https://5.imimg.com/data5/NT/QF/MY-355870/refined-sunflower-oil-500x500.jpg" class="img-fluid " width="100px"><br>
+            <p><b>Saffola Gold
+            </b></p>
+            <button class="btn btn-primary">+Add</button>
+          </div>
+          </center>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------------------------->
+
+  <section class="container ">
+    <div class="row mt-5">
+      <div class="col-lg-6">
+    <h2 class=""><b>We deliver more 
+      than dinner.</b></h2>
+      <p class="text-muted">Need another charger? Kitchen staples? Party supplies? 
+        We’ve got everything you need available for delivery within an hour.</p>
+        </div>
+        <div class="col-lg-6">
+            <div class="card-columns">
+               <div class="card shadow mt-5" style="border-radius: 25px;">
+               <div class="card-body ml-2">
+                 <center>
+                   <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_45b9ETm3boRjK68yNy6r8Kk0t_sbHxm_GqNUE6uQ9lh1K4uOmOv6yCg8P2vYamgTIKA&usqp=CAU" width="100px">
+                   </center>
+               </div>
+               </div>
+               <div class="card shadow" style="border-radius: 25px;">
+                <div class="card-body">
+                  <center>
+                    <img class="img-fluid" src="http://cdn.shopify.com/s/files/1/1975/2917/products/Tomato_Desi_grande.jpg?v=1496866753" width="100px">
+                    </center>
+                </div>
+                </div>
+                <div class="card shadow mt-5" style="border-radius: 25px;">
+                  <div class="card-body ml-2">
+                    <center>
+                      <img class="img-fluid" src="https://media.amway.in/sys-master/images/h59/hfc/8866988916766/EIA.w800.h800.301583ID_1.jpg" width="100px">
+                      </center>
+                  </div>
+                  </div>
+            </div>
+        </div>
+    </div>    
+  </section>
+
+  <!------------------------------------------------------------------------------------------------------------------------>
+  <div class="testimonials-clean mt-5">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">He said; She said </h2>
+            <p class="text-center"></p>
+        </div>
+        <div class="row people">
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Locartdoor has been extremely useful with reference to getting things done in an 
+                      unknown city. Delhi is sometimes too cumbersome to deal with - Locartdoor makes 
+                      this easier</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="https://i.imgur.com/nUNhspp.jpg">
+                    <h5 class="name">Surya V 
+                      </h5>
+                    <p class="title"> 26, 
+                      Delhi</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Locartdoor has been extremely useful with reference to getting things done in an 
+                      unknown city. Delhi is sometimes too cumbersome to deal with - Locartdoor makes 
+                      this easier. 
+                      </p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="https://i.imgur.com/o5uMfKo.jpg">
+                    <h5 class="name">Rani</h5>
+                    <p class="title">21, 
+                      Mumbai
+                      </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="https://i.imgur.com/At1IG6H.png">
+                    <h5 class="name">Emily Clark</h5>
+                    <p class="title">Owner of Creative Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</script>
+
+<section style="background-color: black; color: white;">
+<footer class="container">
+  
+  <div class="row pt-5" >
+    <h3 class="col-lg-3"><b>Locartdoor</b></h3>
+     <div class="col-lg-3 mt-5">
+        <h5>LOCARTDOOR</h5><br>
+       <p class="m-0 p-0"><a href="about.html" style="text-decoration: none;" > About</a></p> 
+       <p class="m-0 p-0">Jobs</p> 
+<p class="m-0 p-0">Contact</p> 
+<p class="m-0 p-0">Terms & Conditions </p>
+<p class="m-0 p-0">Privacy Policy</p> 
+<p class="m-0 p-0">Dunzo for partner</p> 
+<p class="m-0 p-0">Dunzo for business</p>
+
+     </div>
+     <div class="col-lg-3 mt-5">
+      <h5>SERVICEABLE CITIES </h5><br>
+      <p class="m-0 p-0">Bangalore</p> 
+      <p class="m-0 p-0">Pune</p> 
+      <p class="m-0 p-0">Gurgaon</p> 
+      <p class="m-0 p-0">Hyderabad</p> 
+      <p class="m-0 p-0">New Delhi</p> 
+      <p class="m-0 p-0">Chennai</p> 
+      <p class="m-0 p-0">Jaipur</p> 
+      <p class="m-0 p-0">Mumbai</p>
+      
+
+   </div>
+   <div class="col-lg-3 mt-5">
+    <h5>GET IN TOUCH
+    </h5><br>
+    <p class="m-0 p-0">Email</p> 
+    <p class="m-0 p-0">Twitter</p> 
+    <p class="m-0 p-0">Facebook</p> 
+    <p class="m-0 p-0">Instagram</p> 
+    <p class="m-0 p-0">Linkedin</p>
+
+ </div>
+  </div>
+  <h3 class="mt-3">Locartdoor is the largest, most reliable on-demand delivery and pickup platform.</h3>
+  <p class="text-muted">Able to deliver anything from anywhere, Locartdoor is the food delivery, grocery delivery, whatever-you-can-think-of delivery app to bring 
+    what you crave right to your door.
+    </p><br><br>
+  <div class="d-flex">
+   <p>©2020 Locartdoor INC</p>
+   <p>TERMS</p>
+   <p>PRIVACY</p>
+  </div>
+</footer>
+</section>
+
+
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+
+</html>
